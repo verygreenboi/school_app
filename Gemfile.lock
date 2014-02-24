@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/ctran/annotate_models.git
+  revision: eb633bcf19c6a1242cb069e2e66829a9fa0021f1
+  specs:
+    annotate (2.6.1)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,6 +46,7 @@ GEM
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     builder (3.1.4)
+    cancan (1.6.10)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     celluloid-io (0.15.0)
@@ -150,6 +159,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
+    rolify (3.4.0)
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
     sass (3.2.14)
@@ -196,9 +206,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate!
   better_errors
   binding_of_caller
   bootstrap-sass (>= 3.0.0.0)
+  cancan
   coffee-rails (~> 4.0.0)
   devise
   devise_invitable
@@ -217,6 +229,7 @@ DEPENDENCIES
   rb-fchange
   rb-fsevent
   rb-inotify
+  rolify
   sass-rails (~> 4.0.0)
   simple_form
   turbolinks

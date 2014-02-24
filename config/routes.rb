@@ -1,4 +1,8 @@
 SchoolApp::Application.routes.draw do
+  resources :employees
+
+  resources :students
+
   root :to => "home#index"
   devise_for :users, :controllers => {:registrations => "registrations"}
   resources :users
